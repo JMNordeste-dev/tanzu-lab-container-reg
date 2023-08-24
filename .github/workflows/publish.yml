@@ -9,7 +9,7 @@ steps:
 uses: docker/login-action@v1
 with:
 registry: ghcr.io
-username: ${{ github.jmnordeste-dev }}
+username: ${{ github.JMNordeste-Dev }}
 password: ${{ secrets.DOCKER_BUILD_SECRET }}
 - name: Build the hello-docker Docker image
 run: |
