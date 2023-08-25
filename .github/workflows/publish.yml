@@ -11,7 +11,7 @@ jobs:
       registry: ghcr.io
       username: ${{ secrets.GH_USERNAME }}
       password: ${{ secrets.GH_PASSWORD }}
-   - name: Build the hello-docker Docker image
+   - name: Build the Hello World Docker image
      run: |
        docker build . --tag ghcr.io/jmnordeste-dev/tanzu-lab-container-reg:latest
        docker run ghcr.io/jmnordeste-dev/tanzu-lab-container-reg:latest
